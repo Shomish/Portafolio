@@ -1,0 +1,60 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Noviembre 2025 - Actualmente",
+    title: "Community Manager",
+    company: "Empresa Actual",
+    description:
+      "Gestión de redes sociales y creación de contenido estratégico. Desarrollo de campañas digitales orientadas al crecimiento de la comunidad y engagement con la audiencia. Implementación de estrategias de posicionamiento de marca en plataformas sociales.",
+    link: "https://machupicchuviajesperu.com/",
+  },
+  {
+    date: "Septiembre 2025 - Octubre 2025",
+    title: "Paid Media Specialist Freelance",
+    company: "Katty Garcia Spa Cusco",
+    description:
+      "Gestión y optimización de campañas publicitarias en Meta Ads para spa de alta gama. Desarrollo de estrategias de paid media enfocadas en captación de clientes y posicionamiento local. Creación de contenido para TikTok y segmentación efectiva de audiencias.",
+    link: "https://www.tiktok.com/@kattygarciaspacusco",
+  },
+  {
+    date: "junio 2025 - Agosto 2025",
+    title: "Marketing Digital Freelance",
+    company: "Gmax Luxe Travel",
+    description:
+      "Desarrollo y ejecución de estrategia de marketing digital para agencia de turismo de lujo. Creación de contenido para TikTok y gestión de campañas digitales, logrando construir la presencia de marca desde cero y generar engagement con audiencia objetivo del sector luxury travel.",
+    link: "https://www.tiktok.com/@gmax.luxe.travel",
+  },
+  {
+    date: "enero 2025 - junio 2025",
+    title: "Community Manager",
+    company: "Xtreme Tourbulencia",
+    description:
+      "Gestión integral de redes sociales y posicionamiento de marca. Administración de Tripadvisor, edición profesional de imágenes en Lightroom y Canva. Desarrollo e implementación de campañas de Meta Ads enfocadas en posicionamiento y captación de clientes.",
+  },
+  {
+    date: "Julio 2022 - Noviembre 2024",
+    title: "Jefe de Marketing",
+    company: "Heltteck",
+    description:
+      "Lideré el desarrollo de soluciones web personalizadas para agencias de viajes. Implementé estrategias de marketing basadas en el modelo AIDA para mejorar las ventas y la visibilidad de marca. Gestión de proyectos de diseño web con WordPress y campañas de marketing digital.",
+  },
+  {
+    date: "Mayo 2023 - Noviembre 2023",
+    title: "Desarrollador Web",
+    company: "Danaz Comedor SAC",
+    description:
+      "Desarrollo de aplicativo web con PHP, Ajax y MySQL bajo metodología SCRUM. Optimización de procesos del comedor reduciendo significativamente los tiempos de servicio, mejorando la eficiencia operativa y la experiencia del usuario.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
